@@ -4,13 +4,13 @@
 import React from 'react'
 import { connect }from 'react-redux';
 import PropTypes from 'prop-types';
-const Index =({movie})=>(
+const Index =({movie})=> (
     <div>
         {movie.map(m=>
-            <div>{m.releaseYear}
-                <p>{m.title}</p>
-            </div>
-        )}
+                <p>
+                    {m.title}
+                    {m.releaseYear}
+                </p>)}
     </div>
 )
 const mapStateToProps = state => ({

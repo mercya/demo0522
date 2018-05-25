@@ -8,13 +8,15 @@ const movie =(state=[],action)=>{
     console.log('userReducer was called with state', state, 'and action', action.movies)
     switch (action.type){
         case RECEIVE_PRODUCTS:
-            return{
-                ...state,
-                ...action.movies.reduce((obj, product) => {
-                    obj[product.id] = product
-                    return obj
-                }, {})
-            }
+            console.log(action.movies);
+            return[
+                ...state,   
+                ...action.movies
+                //     .reduce((obj , product) => {
+                //     obj[product.id] = product
+                //     return obj
+                // }, [])
+            ]
         default:
             return state
     }
