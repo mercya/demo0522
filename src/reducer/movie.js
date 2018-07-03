@@ -21,5 +21,6 @@ const movie =(state=[],action)=>{
             return state
     }
 }
+//reducer 是对一些数据类型进行转化包括
 
 export  default  movie

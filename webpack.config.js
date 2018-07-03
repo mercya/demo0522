@@ -55,12 +55,12 @@ module.exports={
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.DefinePlugin({ __DEV__: JSON.stringify(JSON.parse((process.env.NODE_ENV == 'dev') || 'false')) })
+        new webpack.DefinePlugin({ __DEV__: JSON.stringify(JSON.parse((process.env.NODE_ENV == 'dev') || 'false')) }),
         //html模板
-        // new HtmlWebpackPlugin({
-        //     title:'Title'
-        // }),
-        // new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({
+            template:'index.html',
+            title:'Title',
+        }),
     ]
 
 };

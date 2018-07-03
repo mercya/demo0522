@@ -11,6 +11,7 @@ import thunk from 'redux-thunk'
 import { getAllMovies } from './actions'
 import Index from './components/Detail';
 import reducer from './reducer'
+import Main from './components/Main'
 
 const middleware = [ thunk ]
 
@@ -19,7 +20,7 @@ store.dispatch(getAllMovies())
 
 ReactDOM.render(
     <Provider  store={store}>
-        <Index/>
+        <Main/>
     </Provider>,
     document.getElementById('app')
 )

@@ -4,8 +4,9 @@
 import React from 'react'
 import { connect }from 'react-redux';
 import PropTypes from 'prop-types';
+import Button from 'antd';
 const Index =({movie})=> (
-    <div>
+    <div className="detail fl">
         {movie.map(m=>
                 <p>
                     {m.title}
@@ -16,8 +17,6 @@ const Index =({movie})=> (
 const mapStateToProps = state => ({
     movie:state.movie
 })
-
-
 Index.PropTypes={
     // "id": 1,
     // "title": "Star Wars",
@@ -27,8 +26,6 @@ Index.PropTypes={
         title: PropTypes.string.isRequired,
         releaseYear: PropTypes.string.isRequired,
     })).isRequired
-
-
 }
 export default connect(
     mapStateToProps
