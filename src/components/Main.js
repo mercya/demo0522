@@ -34,7 +34,7 @@ const Basic = () => (
             <Route exact path="/" component={Index}/>
             <Route path="/about" component={Plan}/>
             <Route path="/topics" component={Index}/>
-            <Route path="/detail/:topicId" component={Index} />
+            <Route path="/detail" component={Index} />
         </div>
     </Router>
 )
