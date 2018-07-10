@@ -7,6 +7,8 @@ import PropTypes from 'prop-types';
 import Button from 'antd';
 const Index =({movie})=> (
     <div className="detail fl">
+        <h1></h1>
+
         {movie.map(m=>
                 <p>
                     {m.title}
@@ -27,6 +29,7 @@ Index.PropTypes={
         releaseYear: PropTypes.string.isRequired,
     })).isRequired
 }
+
 export default connect(
     mapStateToProps
 )(Index)

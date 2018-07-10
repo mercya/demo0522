@@ -1,8 +1,5 @@
 @import '~antd/dist/antd.css';
 
-.App {
-    text-align: center;
-}
 .clear{
     clear: both;
 }
@@ -44,8 +41,13 @@
     height: 36px;
 }
 .container-main{
-    width: 1200px;
+    width: 800px;
     margin: 0 auto;
+}
+.button{
+    width: 200px;
+    height: 40px;
+    -moz-border-radius: 5px;
 }
 /*detail*/
 .detail{
